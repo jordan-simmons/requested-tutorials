@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Instruction</title>
+	<style type="text/css">
+
+		@font-face {
+		    font-family: 'afta_serifitalic';
+		    src: url('fonts/aftaserifthin-italic-webfont.woff2') format('woff2'),
+		         url('fonts/aftaserifthin-italic-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'afta_serifregular';
+		    src: url('fonts/aftaserifthin-regular-webfont.woff2') format('woff2'),
+		         url('fonts/aftaserifthin-regular-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'alegreya_sansbold';
+		    src: url('fonts/alegreyasans-bold-webfont.woff2') format('woff2'),
+		         url('fonts/alegreyasans-bold-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'alegreya_sansregular';
+		    src: url('fonts/alegreyasans-regular-webfont.woff2') format('woff2'),
+		         url('fonts/alegreyasans-regular-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		*{ /*Setting initial values, also known as a reset.*/
+			font-family: 'Helvetica';
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		h1, h2, h3{
+			font-family: 'afta_serifregular';
+		}
+
+		p{
+			font-family: 'alegreya_sansregular';
+		}
+		/* orange #FFA228*/
+
+		header{
+			padding: 10px;
+			background-color: #efefef;
+			color: #1f1f1f;
+		}
+
+		header h1{
+			color: #1b1b1b;
+		}
+
+		h3+p{
+			width: 80%;
+			margin: auto;
+		}
+
+		em{
+			color: #33dd22;
+		}
+
+		span{
+			cursor: pointer;
+		}
+
+		.content{
+			width: 500px;
+			margin: 20px auto;
+		}
+
+		.content h3{
+			margin-top: 5px;
+		}
+
+		.content h2{
+			padding: 2px;
+			margin-top: 10px;
+		}
+
+		.content p, .steps{
+			text-align: left;
+		}
+
+		.nf{
+			max-width: 99%;
+		}
+
+		.btn{
+			background-color: #bebebe;
+			padding: 2px;
+			color: #ff002f; 
+			border-radius: 4px;
+		}
+
+		.btn:hover, .btn:active{
+			background-color: #9e9e9e;
+			color: #dd000d;
+		}
+
+		.steplist{
+			color: #d8d8d8;
+			padding: 8px 6px;
+			background-color: #1d1d1d;
+			border-radius: 10px;
+			box-shadow: 2px 2px 5px #2b2b2b;
+		}
+
+
+
+	</style>
+	<script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<header>
+		<h1>A few tutorials</h1>
+		<p>as well as some problems, frequent errors, and solutions.</p>
+	</header>
+	<section>
+		<div class="content">
+			<h2>First up: Media Query</h2>
+			<p>A css media query is a rule in css where you can obtain and utilize the dimensions of the browser window to dynamically change your website based on the current dimensions of the window.
+			<br><br>I put the css for this page within the HTML for convenience.<br><br>
+
+			</p>
+			<!-- <a href="example.html" target="_blank">example webpage</a> -->
+		</div>
+
+		<div class="content">
+			<h2>Next: Fonts</h2>
+			<p>There a handful of ways to apply fonts to an HTML document, here are two of the ways I prefer to do so:</p>
+			<h3>Linking</h3>
+			<p>If you only have one page and you want fonts quickly you can use this method.</p><br>
+			<span id="h-1" class="btn">Show content</span>
+			<div id="h-d-1" class="steplist">
+				<h3 class="steps">Step one: </h3><p>Go to <a href="https://fonts.google.com/">google fonts</a>.</p><br>
+				<h3 class="steps">Step two: </h3><p>Select your fonts.</p><br>
+				<h3 class="steps">Step three: </h3><p>Copy the HTML link element provided by the website, and paste it ABOVE your other css links (or your &lt;style&gt;).</p><br>
+				<h3 class="steps">Step four: </h3><p>Apply the css from google's website to your css.</p><br>
+			</div>
+			<br><br>
+			<h3>Font face</h3>
+			<p>If you have multiple web pages, the linking method could impact load time significantly, especially if you have more than three fonts. What do you do? You choose the css font-face rule! It's how I applied the fonts to these web pages you're viewing right now.</p><br><br>
+			<span id="h-2" class="btn">Show content</span>
+			<div id="h-d-2" class="steplist">
+				<h3 class="steps">Step 1: </h3><p>Go to <a href="https://www.fontsquirrel.com">fontsquirrel.com</a>, and pick out your fonts.<br><i>Don't choose 'OFFSITE' fonts, those aren't usually free.</i></p>
+				<a href="insimg/s01.png" target="_blank"><img src="insimg/s01.png" class="nf"></a>
+				<br> 
+				<h3 class="steps">Step 2: </h3><p>Download the fonts you have chosen.</p>
+				<a href="insimg/s02.png" target="_blank"><img src="insimg/s02.png" class="nf"></a>
+				<br>
+				<h3 class="steps">Step 3: </h3><p>Move those files to the desktop, and unzip them.</p>
+				<a href="insimg/s03.png" target="_blank"><img src="insimg/s03.png"></a>
+				<a href="insimg/s04.png" target="_blank"><img src="insimg/s04.png"></a>
+				<br>
+				<h3 class="steps">Step 4: </h3><p>Go back to fontsquirrel, and select the 'generator'.</p>
+				<a href="insimg/s05.jpg" target="_blank"><img src="insimg/s05.jpg" class="nf"></a>
+				<br>
+				<h3 class="steps">Step 5: </h3><p>Don't mess with the options under the upload button. Click the agreement to continue.</p>
+				<a href="insimg/s08.png" target="_blank"><img src="insimg/s08.png" class="nf"></a>
+				<br>
+				<h3 class="steps">Step 6: </h3><p>Click 'Upload fonts'.</p>
+				<a href="insimg/ss.png" target="_blank"><img src="insimg/ss.png"></a>
+				<br>
+				<h3 class="steps">Step 7: </h3><p>Now, select upload fonts. If there are quite a few variations in your file (see below for example) You should only upload the ones you absolutely need, these would normally be regular, bold, and/or italic.</p>
+				<a href="insimg/s06.png" target="_blank"><img src="insimg/s06.png"></a>
+				<p><i>example of a large list: </i></p>
+				<a href="insimg/s07.png" target="_blank"><img src="insimg/s07.png"></a>
+				<br>
+				<h3 class="steps">Step 8: </h3><p>After you have chosen your fonts and uploaded them, you should be presented with a list like this (below), and then you should download the kit with the button below it.</p>
+				<a href="insimg/s09.png" target="_blank"><img src="insimg/s09.png" class="nf"></a>
+				<br>
+				<h3 class="steps">Step 9: </h3><p>After downloading, and unzipping, you should have a file with all of the newly converted fonts, as well as an example of each, and a stylesheet at the bottom. Inside your website's directory, commonly placed inside the css folder, you will create a 'fonts' folder, and place every *.woff, and *.woff2 file within it.</p>
+				<a href="insimg/sss.png" target="_blank"><img src="insimg/sss.png"></a>
+				<br>
+				<h3 class="steps">Step 10: </h3><p>Open the stylesheet with your favorite text editor. <i>it could be notepad, just anything that will allow you to save it as a css file</i>.</p>
+				<a href="insimg/s10.png" target="_blank"><img src="insimg/s10.png" class="nf"></a>
+				<br>
+				<h3 class="steps">Step 11: </h3><p>Inside the css, the font urls must have their destination changed to where you have your fonts stored, so if they're in a 'fonts' folder within the css folder, you would change the url to <br><em>'fonts/font.woff</em> and <em>'fonts/font.woff</em>, whereas if your fonts are in the main directory with the index.html, your fonts' urls should be <br><em>'../fonts/font.woff'</em>.</p><br>
+				<h3 class="steps">Step 12: </h3><p>After adding the appropriate destination to the url, you must then copy the css you modified and paste it to the top of your current css.</p><br>
+				<h3 class="steps">Step 13: (optional) </h3><p>You can change the name of the fonts you've loading in the css to make them easier to type, as they can be strenuous, but if you don't wish to do that, then you're finished, all you have to do is use them!</p>
+			</div>
+		</div>
+	</section>
+	<footer>
+	</footer>
+	<script type="text/javascript">
+		$(function(){
+			$("#h-d-1").hide();
+			$("#h-1").click(function(){
+				$("#h-d-1").toggle();
+
+			});
+
+			$("#h-d-2").hide();
+			$("#h-2").click(function(){
+				$("#h-d-2").toggle();
+			});
+		});
+	</script>
+</body>
+</html>
